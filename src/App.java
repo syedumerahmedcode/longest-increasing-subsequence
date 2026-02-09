@@ -23,6 +23,10 @@ public class App {
         int[] nums = { 10, 9, 2, 5, 3, 7, 101, 18 };
         Solution solution = new Solution();
         int result = solution.lengthOfLIS(nums);
+        System.out.println("The longest increasing subsequence for the input given above is: " + result);
+        
+        BetterSolution betterSolution = new BetterSolution();
+        result = betterSolution.lengthOfLIS(nums);
         System.out.println("The longest increasing subsequence for the input given above is: "+result);
     }
 }
